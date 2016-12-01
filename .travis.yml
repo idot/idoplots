@@ -1,2 +1,15 @@
 language: r
 cche: packages
+
+r_github_packages:
+  - jimhester/covr
+
+r_binary_packages:
+  - testthat
+  - ggplot2
+  - RColorBrewer
+
+after_success:
+  - Rscript -e 'covr::codecov()'
+  - Rscript -e 'covr::coveralls()'
+

@@ -28,9 +28,9 @@ discrete_palette <- function(n){
 #' @return discrete scale
 #' 
 #' @examples
-#' ggplot(data.frame(x=c("A","B","C"),y=1:3), aes(x=x,y=y,colour=x)) + geom_point() + discrete_colour()
+#' ggplot2::ggplot(data.frame(x=c("A","B","C"),y=1:3), aes(x=x,y=y,colour=x)) + geom_point() + discrete_colour()
 #'
-#' @export
+#' @export discrete_color discrete_colour
 discrete_color <- discrete_colour <- function(){
    ggplot2::discrete_scale("colour", "manual", discrete_palette)
 }
@@ -44,7 +44,7 @@ discrete_color <- discrete_colour <- function(){
 #' @return discrete scale
 #' 
 #' @examples
-#' ggplot(data.frame(x=c("A","B","C"),y=1:3), aes(x=x,y=y,fill=x)) + geom_bar(stat="identity") + discrete_fill()
+#' ggplot2::ggplot(data.frame(x=c("A","B","C"),y=1:3), aes(x=x,y=y,fill=x)) + geom_bar(stat="identity") + discrete_fill()
 #'
 #' @export
 discrete_fill <- function(){

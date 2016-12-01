@@ -9,8 +9,10 @@ License: GPLv3
 Encoding: UTF-8
 LazyData: true
 Remotes: johnbaums/hues
+Suggests:
+    testthat
 Imports:
+    ggplot2
     hues,
-    RColorBrewer,
-    ggplot2,
+    RColorBrewer
 RoxygenNote: 5.0.1
