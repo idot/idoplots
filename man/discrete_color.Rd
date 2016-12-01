@@ -14,7 +14,7 @@ n <= 9: RColorBrewer Set1\cr
 n > 9: hues "I want hue"
 }
 \examples{
-ggplot2::ggplot(data.frame(x=c("A","B","C"),y=1:3), aes(x=x,y=y,colour=x)) + geom_point() + discrete_colour()
+ggplot2::ggplot(data.frame(x=c("A","B","C"),y=1:3), ggplot2::aes(x=x,y=y,colour=x)) + ggplot2::geom_point() + discrete_colour()
 
 }
 
