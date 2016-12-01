@@ -10,7 +10,8 @@ Encoding: UTF-8
 LazyData: true
 Remotes: johnbaums/hues
 Suggests:
-    testthat
+    testthat,
+    covr 
 Imports:
     ggplot2,
     hues,
