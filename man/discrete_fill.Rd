@@ -14,7 +14,7 @@ n <= 9: RColorBrewer Set1\cr
 n > 9: hues "I want hue"
 }
 \examples{
-ggplot(data.frame(x=c("A","B","C"),y=1:3), aes(x=x,y=y,fill=x)) + geom_bar(stat="identity") + discrete_fill()
+ggplot2::ggplot(data.frame(x=c("A","B","C"),y=1:3), aes(x=x,y=y,fill=x)) + geom_bar(stat="identity") + discrete_fill()
 
 }
 
