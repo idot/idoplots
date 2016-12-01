@@ -16,9 +16,10 @@ Functions
 ---------
 * discrete_fill() and discrete_colour() for ggplot2
   creates a discrete colour scale based on brewer for n <= 9 and hues ("I want hues") for n > 9 
-  ```R
-     ggplot2::ggplot(data.frame(x=c("A","B","C"),y=1:3), aes(x=x,y=y,fill=x)) + geom_bar(stat="identity") + discrete_fill()
-  ```
+
+```R
+    ggplot2::ggplot(data.frame(x=c("A","B","C"),y=1:3), aes(x=x,y=y,fill=x)) + geom_bar(stat="identity") + discrete_fill()
+```
 
 
 
