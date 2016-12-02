@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: person("Ido", "Tamir", email = "tamir@imp.ac.at", role = c("aut", "cre"))
 Description: Utility functions for plotting.
 Depends:
-    R (>= 3.3.1)
+    R (>= 3.2.1)
 License: GPLv3
 Encoding: UTF-8
 LazyData: true
