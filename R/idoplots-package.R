@@ -4,4 +4,5 @@
 #' @import RColorBrewer
 #' @import hues
 #' @import ggplot2
+#' @import hexbin
 NULL

@@ -52,6 +52,33 @@ discrete_fill <- function(){
 }
 
 
+#' continuous palette for fill aesthetic
+#' with BTY blue to yellow
+#'
+#' 
+#' @return continuous scale
+#'
+#' @examples
+#' ggplot2::ggplot(data.frame(x=1,y=1:255), ggplot2::aes(x=x,y=y,fill=y)) + ggplot2::geom_bar(stat="identity") + scale_fill_bty()
+#'
+#' @export
+scale_fill_bty <- function(){
+   ggplot2::continuous_scale("fill", "bty", function(val){ hexbin::BTY(256)[floor(val*256)] })   
+}
+
+
+#' continuous palette for color aesthetic
+#' with BTY blue to yellow
+#'
+#'
+#' @return continuous scale
+#' @examples 
+#' ggplot2::ggplot(data.frame(x=1,y=1:255), ggplot2::aes(x=x,y=y,color=y)) + ggplot2::geom_bar(stat="identity") + scale_color_bty()
+#'
+#' @export
+scale_color_bty <- function(){
+   ggplot2::continuous_scale("colour", "bty", function(val){ hexbin::BTY(256)[ceiling(val*256)] })
+}
 
 
 

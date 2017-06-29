@@ -1,6 +1,6 @@
 Package: idoplots
 Title: Utility functions for plotting
-Version: 0.0.0.9000
+Version: 0.1.0.0000
 Authors@R: person("Ido", "Tamir", email = "tamir@imp.ac.at", role = c("aut", "cre"))
 Description: Utility functions for plotting.
 Depends:
@@ -15,5 +15,6 @@ Suggests:
 Imports:
     ggplot2,
     hues,
-    RColorBrewer
+    RColorBrewer,
+    hexbin
 RoxygenNote: 5.0.1
