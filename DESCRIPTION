@@ -1,7 +1,7 @@
 Package: idoplots
 Title: Utility functions for plotting
 Version: 0.1.0.0000
-Authors@R: person("Ido", "Tamir", email = "tamir@imp.ac.at", role = c("aut", "cre"))
+Authors@R: person("Ido", "Tamir", email = "ido.tamir@vbcf.ac.at", role = c("aut", "cre"))
 Description: Utility functions for plotting.
 Depends:
     R (>= 3.2.1)
