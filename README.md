@@ -15,7 +15,7 @@ devtools::install_github("idot/idoplots")
 Functions
 ---------
 * discrete_fill() and discrete_colour() for ggplot2
-  creates a discrete colour scale based on brewer for n <= 9 and hues ("I want hues") for n > 9 
+  creates a discrete colour scale based on brewer for n <= 9 and hues ("I want hues") for n > 9 (random=FALSE -> reproducible) 
 
 * xrot() rotates the x-axis labels for ggplot2
 
