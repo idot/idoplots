@@ -5,4 +5,6 @@
 #' @import hues
 #' @import ggplot2
 #' @import hexbin
+#' @import grid
+#' @import gridExtra
 NULL

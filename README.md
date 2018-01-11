@@ -28,6 +28,13 @@ Functions
 ```R
    ggplot2::ggplot(data.frame(x=1,y=1:255), ggplot2::aes(x=x,y=y,color=y,fill=y)) + ggplot2::geom_bar(stat="identity") + scale_color_bty() + scale_fill_bty()
 ```
+* grid_arrange_shared_legend() combines multiple plots with a shared legend
+
+```R
+   p1 <- ggplot2::ggplot(data.frame(x=c("A","B","C"),y=1:3), ggplot2::aes(x=x,y=y,colour=x)) + ggplot2::geom_point()
+   p2 <- ggplot2::ggplot(data.frame(x=c("A","B","C"),y=1:3), ggplot2::aes(x=x,y=y,colour=x)) + ggplot2::geom_point()
+   grid_arrange_shared_legend(p1, p2) 
+```
 
 
 
