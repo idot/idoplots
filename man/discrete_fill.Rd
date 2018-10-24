@@ -17,4 +17,3 @@ n > 9: hues "I want hue"
 ggplot2::ggplot(data.frame(x=c("A","B","C"),y=1:3), ggplot2::aes(x=x,y=y,fill=x)) + ggplot2::geom_bar(stat="identity") + discrete_fill()
 
 }
-

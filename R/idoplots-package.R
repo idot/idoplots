@@ -4,7 +4,7 @@
 #' @import RColorBrewer
 #' @import hues
 #' @import ggplot2
-#' @import hexbin
+#' @import viridis 
 #' @import grid
 #' @import gridExtra
 NULL

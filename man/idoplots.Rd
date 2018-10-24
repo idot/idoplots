@@ -5,4 +5,6 @@
 \alias{idoplots}
 \alias{idoplots-package}
 \title{utility functions for plotting}
-
+\description{
+utility functions for plotting
+}

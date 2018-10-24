@@ -1,6 +1,6 @@
 Package: idoplots
 Title: Utility functions for plotting
-Version: 0.1.0.0000
+Version: 0.2.0.0000
 Authors@R: person("Ido", "Tamir", email = "ido.tamir@vbcf.ac.at", role = c("aut", "cre"))
 Description: Utility functions for plotting.
 Depends:
@@ -11,10 +11,11 @@ LazyData: true
 Remotes: johnbaums/hues
 Suggests:
     testthat,
-    covr 
+    covr
 Imports:
     ggplot2,
+    scales,
     hues,
     RColorBrewer,
-    hexbin
-RoxygenNote: 5.0.1
+    viridis
+RoxygenNote: 6.1.0

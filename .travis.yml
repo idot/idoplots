@@ -10,7 +10,7 @@ r_binary_packages:
   - testthat
   - ggplot2
   - RColorBrewer
-  - hexbin
+  - viridis 
 
 after_success:
   - Rscript -e 'covr::codecov()'

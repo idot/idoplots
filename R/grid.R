@@ -4,6 +4,11 @@
 #' 
 #' @return plots 
 #' 
+#' @param position bottom or right for legend placement
+#' @param ncol how many columns
+#' @param nrom how many rows, default 1 
+#'
+#' 
 #' @examples
 #' p1 <- ggplot2::ggplot(data.frame(x=c("A","B","C"),y=1:3), ggplot2::aes(x=x,y=y,colour=x)) + ggplot2::geom_point() 
 #' p2 <- ggplot2::ggplot(data.frame(x=c("A","B","C"),y=1:3), ggplot2::aes(x=x,y=y,colour=x)) + ggplot2::geom_point()

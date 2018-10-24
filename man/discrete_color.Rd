@@ -17,4 +17,3 @@ n > 9: hues "I want hue"
 ggplot2::ggplot(data.frame(x=c("A","B","C"),y=1:3), ggplot2::aes(x=x,y=y,colour=x)) + ggplot2::geom_point() + discrete_colour()
 
 }
-

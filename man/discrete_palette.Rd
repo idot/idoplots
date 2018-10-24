@@ -16,4 +16,3 @@ vector of colors
 n <= 9: RColorBrewer Set1\cr 
 n > 9: hues "I want hue"
 }
-
