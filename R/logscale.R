@@ -4,6 +4,7 @@
 #' 
 #' call scale_y_continuous(trans = "log2", labels=log2format(.x), limits = c(2^-3,2^15))
 #'
+#' @export
 log2format <- function(n){
   scales::trans_format('log2', scales::math_format(2^.x))
 }
@@ -13,7 +14,10 @@ log2format <- function(n){
 #' 
 #' @param limits default: c(2^-2,2^15)
 #'
+#' @examples
+#' ggplot2::ggplot(data.frame(y=2^(1:10),x=10), ggplot2::aes(x=x,y=y)) + ggplot2::geom_point() + scale_y_log2()
 #'
+#' @export
 scale_y_log2 <- function(limits=c(2^-2,2^15)){
    ggplot2::scale_y_continuous(trans = "log2", labels=log2format(.x), limits = limits)
 } 
@@ -26,6 +30,7 @@ scale_y_log2 <- function(limits=c(2^-2,2^15)){
 #' @examples
 #' ggplot2::ggplot(data.frame(x=2^(1:10),y=10), ggplot2::aes(x=x,y=y)) + ggplot2::geom_point() + scale_x_log2()
 #'
+#' @export
 scale_x_log2 <- function(limits=c(2^-2,2^15)){
    ggplot2::scale_x_continuous(trans = "log2", labels=log2format(.x), limits = limits)
 }
